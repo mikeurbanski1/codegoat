@@ -71,6 +71,30 @@ Resources:
       Tags:
         - Key: Name
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data"
+  FlowBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Delete
+    Properties:
+      BucketName: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-flowlogs"
+      Tags:
+        - Key: Name
+          Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-flowlogs"
+        - Key: yor_trace
+          Value: a148a687-a031-4491-8fc9-6bb78fef0572
+        - Key: git_org
+          Value: bridgecrewio
+        - Key: git_repo
+          Value: cfngoat
+        - Key: git_file
+          Value: cfngoat.yaml
+        - Key: git_commit
+          Value: 42153ba22c28f5c0bff388b24a6344137a5dfe26
+        - Key: git_modifiers
+          Value: jonathan.jozwiak/nimrodkor
+        - Key: git_last_modified_at
+          Value: "2021-08-23 13:51:41"
+        - Key: git_last_modified_by
+          Value: nimrodkor@gmail.com
 
 Outputs:
   EC2PublicDNS:
