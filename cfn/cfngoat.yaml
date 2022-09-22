@@ -95,6 +95,11 @@ Resources:
           Value: "2021-08-23 13:51:41"
         - Key: git_last_modified_by
           Value: nimrodkor@gmail.com
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+
 
 Outputs:
   EC2PublicDNS:
