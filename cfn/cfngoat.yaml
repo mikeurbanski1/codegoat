@@ -90,7 +90,7 @@ Resources:
         - Key: git_commit
           Value: 42153ba22c28f5c0bff388b24a6344137a5dfe26
         - Key: git_modifiers
-          Value: jonathan.jozwiak/nimrodkor
+          Value: mike
         - Key: git_last_modified_at
           Value: "2021-08-23 13:51:41"
         - Key: git_last_modified_by
