@@ -1,0 +1,56 @@
+{
+  "name": "@bridgecrew/satools",
+  "version": "1.0.0",
+  "description": "Tools for Bridgecrew's awesome SA team",
+  "bin": {
+    "satools": "./installation/satools.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "semantic-release": "semantic-release",
+    "cm": "git-cz",
+    "prepare": "husky install",
+    "build-platform-deps": "echo this is a reminder to do this one day"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://spring.paloaltonetworks.com/bridgecrewio/sa-tools.git"
+  },
+  "author": "Bridgecrew SA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://spring.paloaltonetworks.com/bridgecrewio/sa-tools/issues"
+  },
+  "homepage": "https://spring.paloaltonetworks.com/bridgecrewio/sa-tools#readme",
+  "dependencies": {
+    "@tsoa/runtime": "^3.8.0",
+    "aws-sdk": "^2.767.0",
+    "axios": "^0.21.4",
+    "command-exists": "^1.2.9",
+    "commander": "^6.2.0",
+    "fast-csv": "^4.3.6",
+    "inquirer": "^7.3.3",
+    "shelljs": "^0.8.5",
+    "update-notifier": "^5.1.0"
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.1",
+    "eslint-plugin-prettier": "^3.4.1",
+    "husky": "^7.0.4",
+    "prettier": "^2.3.2",
+    "semantic-release": "^19.0.2"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
