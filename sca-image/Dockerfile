@@ -1,3 +1,3 @@
 FROM ubuntu
-RUN mkdir /app
+RUN mkdir /app2
 
