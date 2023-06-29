@@ -25,6 +25,10 @@ Parameters:
     Default: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2
 
 Resources:
+  KMSEncryption:
+      Type: AWS::Kinesis::Stream
+      Properties:
+        Name: abc
   ####################
   ###  EC2 in VPC  ###
   ####################
