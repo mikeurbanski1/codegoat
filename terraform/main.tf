@@ -2,10 +2,8 @@ resource "aws_ebs_volume" "i" {
 
 }
 
-resource "aws_ebs_volume" "i2" {
+resource "aws_kinesis_stream" "test_stream" {
 
-}
-
-resource "aws_s3_bucket" "i2" {
+  name             = "terraform-kinesis-test"
 
 }
