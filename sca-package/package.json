@@ -43,7 +43,8 @@
     "eslint-plugin-prettier": "^3.4.1",
     "husky": "^7.0.4",
     "prettier": "^2.3.2",
-    "semantic-release": "^19.0.2"
+    "semantic-release": "^19.0.2",
+    "express": "3.0.0"
   },
   "publishConfig": {
     "access": "restricted"
